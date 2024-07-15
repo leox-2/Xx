@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Editor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Code Editor</h1>
         <div class="editor">
-            <div class="section">
+            <div class="editor-section">
                 <h2>HTML</h2>
-                <textarea id="html" placeholder="Enter HTML here"></textarea>
+                <textarea id="html-code" placeholder="Enter HTML here"></textarea>
             </div>
-            <div class="section">
+            <div class="editor-section">
                 <h2>CSS</h2>
-                <textarea id="css" placeholder="Enter CSS here"></textarea>
+                <textarea id="css-code" placeholder="Enter CSS here"></textarea>
             </div>
-            <div class="section">
+            <div class="editor-section">
                 <h2>JS</h2>
-                <textarea id="js" placeholder="Enter Script.js here"></textarea>
+                <textarea id="js-code" placeholder="Enter Script.js here"></textarea>
             </div>
         </div>
-        <button id="runCode">Run Code</button>
-        <iframe id="output" class="output"></iframe>
+        <button id="run-code">Run Code</button>
+        <button id="download-project">Download Project</button>
+        <iframe id="result-frame"></iframe>
     </div>
     <script src="script.js"></script>
 </body>
